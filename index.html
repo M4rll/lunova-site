@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lunova - Infoprodutos de alta qualidade para seu desenvolvimento pessoal e profissional">
+    <title>Lunova - Infoprodutos Premium</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/produtos.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🌙 Lunova</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/produtos.html">Produtos</a></li>
+                    <li><a href="pages/sobre.html">Sobre</a></li>
+                    <li><a href="pages/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="carrinho-icon" onclick="verCarrinho()">
+                🛒 <span class="carrinho-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Conhecimento que Transforma</h2>
+                <p>Infoprodutos exclusivos para acelerar seu crescimento</p>
+                <button class="cta-button" onclick="scrollToProducts()">Explorar Produtos</button>
+            </div>
+        </section>
+
+        <!-- Produtos Destaque -->
+        <section class="destaques" id="produtos">
+            <div class="container">
+                <h2>🎯 Produtos em Destaque</h2>
+                <div class="grid-produtos" id="grid-produtos">
+                    <!-- Produtos carregados via JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Lunova. Desenvolvido com 💜</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">📱</a>
+                <a href="#" aria-label="Email">✉️</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/carrinho.js"></script>
+    <script src="scripts/produtos.js"></script>
+</body>
+</html>
